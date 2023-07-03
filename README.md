@@ -183,7 +183,7 @@ sudo systemctl enable prometheus
 
 systemctl status prometheus
 
-### Agregar node exporter a promehteus
+### Agregar node exporter a promehteus. Reemplace las viñetas por un guion -
 
 nano /etc/prometheus/prometheus.yml
 

@@ -118,7 +118,7 @@ cd $HOME
 
 ### Editar el archivo
 
-nano systemd/system/prometheus.service
+nano /etc/systemd/system/prometheus.service
 
 
 [Unit]

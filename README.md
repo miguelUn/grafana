@@ -1,4 +1,4 @@
-# grafana
+# Grafana
 
 ### Actualizar linux
 

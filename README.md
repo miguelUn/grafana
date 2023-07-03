@@ -190,7 +190,7 @@ nano /etc/prometheus/prometheus.yml
 
 scrape_configs:
 
-  # The job name is added as a label `job=<job_name>` to any timeseries scraped from this config.
+  #The job name is added as a label `job=<job_name>` to any timeseries scraped from this config.
 
   - job_name: "prometheus"
 
@@ -209,4 +209,4 @@ scrape_configs:
 
 sudo systemctl restart prometheus
 
-# Vía web agregar fuente de datos y crear tablero
+## Vía web agregar fuente de datos y crear tablero

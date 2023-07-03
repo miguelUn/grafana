@@ -182,3 +182,31 @@ sudo systemctl start prometheus
 sudo systemctl enable prometheus
 
 systemctl status prometheus
+
+### Agregar node exporter a promehteus
+
+nano /etc/prometheus/prometheus.yml
+
+
+scrape_configs:
+
+  # The job name is added as a label `job=<job_name>` to any timeseries scraped from this config.
+
+  - job_name: "prometheus"
+
+    static_configs:
+
+      - targets: ["localhost:9090"]
+
+  - job_name: 'node_exporter'
+
+    static_configs:
+
+      - targets: ['localhost:9100']
+
+
+### Reiniciar servicio
+
+sudo systemctl restart prometheus
+
+# Vía web agregar fuente de datos y crear tablero
